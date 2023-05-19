@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /*Colors*/
 :root {
+    --hue: 210;
     --header-height : 3.5rem;
-    --first-color: hsl(162, 100%, 40%);
-    --first-color-alt: hsl(162, 56%, 35%);
+    --first-color: hsl(210, 100%, 40%);
+    --first-color-alt: hsl(210, 56%, 35%);
     --title-color : hsl(228, 8%, 95%);
     --text-color : hsl(228, 8%, 65%);
     --body-color: hsl(228, 15%, 20%);
@@ -235,4 +236,16 @@ svg{
     width: 320px;
     fill: var(--first-color);
 }
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: box-shadow 0.4s;
+}
 
+.button:hover{
+    box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, 0.25);
+}
