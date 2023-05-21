@@ -342,5 +342,5 @@ svg{
     margin-bottom: 1rem;
 }
 .services__card:hover{
-    border: 2px solid var(--first-color)
+    border: 2px solid var(--first-color);
 }
