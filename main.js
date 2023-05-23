@@ -37,3 +37,21 @@ const blurHeader = () =>{
                        : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
+
+const contactForm = document.getElementById('contact-form')
+        contactMessage=document.getElementById('contact-message')
+
+const sendEmail = (e) => {
+    e.preventDefault()
+    //serviceID - templateID - #form - publicKey
+    emailjs.sendForm('service_jt0u7qu', 'template_wma6rsh', '#contact-form', 'U9VJRitIez3dlGt4F')
+        .then(()=>{
+            //show message
+            contactMessage.textContent = 'Message sent successfully'
+        }, () => {
+            //show error message
+            contactMessage.textContent = 'Message not sent(service error)'
+        })
+    
+}
+contactForm.addEventListener('submit', sendEmail) 
