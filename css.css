@@ -506,7 +506,7 @@ svg{
 }
 
 /*Breakpoints for all devices*/
-@media screen and (max-width: 320px){
+@media screen and (max-width:320px){
     .container{
         margin-inline: 1rem;
     }
@@ -517,10 +517,10 @@ svg{
     .services__card{
         padding-block: 1.5rem;
     }
-}
+} 
 
 /*for medium devices*/
-@media screen and (min-width: 576px){
+@media screen and (min-width:576px){
     .home__container,
     .about__container,
     .skills__container,
@@ -607,7 +607,7 @@ svg{
         row-gap: 4.5rem;
     }
     .home__title{
-        font-size: 3.5rem;
+        font-size: 3.5rem; 
     }
     .home__description{
         margin-block: 1.5rem 2.5rem;
@@ -682,6 +682,7 @@ svg{
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        text-align: initial;
     }
     .footer__copy{
         margin: 0;
